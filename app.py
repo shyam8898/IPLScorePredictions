@@ -34,6 +34,8 @@ def predict():
             temp_array = temp_array + [0,0,0,0,0,1,0]
         elif batting_team == 'Sunrisers Hyderabad':
             temp_array = temp_array + [0,0,0,0,0,0,1]
+	elif batting_team == 'Chennai Super Kings':
+            temp_array = temp_array + [0,0,0,0,0,0,0]
             
             
         bowling_team = request.form['bowling-team']
@@ -51,6 +53,8 @@ def predict():
             temp_array = temp_array + [0,0,0,0,0,1,0]
         elif bowling_team == 'Sunrisers Hyderabad':
             temp_array = temp_array + [0,0,0,0,0,0,1]
+	elif bowling_team == 'Chennai Super Kings':
+            temp_array = temp_array + [0,0,0,0,0,0,0]
             
             
         overs = float(request.form['overs'])
